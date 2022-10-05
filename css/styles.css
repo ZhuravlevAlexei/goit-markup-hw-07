@@ -322,14 +322,29 @@ address {
   color: var(--main-headers-color);
 }
 
+/* заголовок всіх секцій */
+.section-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--main-headers-color);
+}
+
 /* секція особливостей */
-.special-list {
+.speciality__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.special-title {
+.speciality__item {
+  width: 270px;
+  flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));
+}
+
+.speciality__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -337,12 +352,7 @@ address {
   color: var(--main-headers-color);
 }
 
-.special-item {
-  width: 270px;
-  flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));
-}
-
-.special-thumb {
+.speciality__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,28 +370,25 @@ address {
   padding-top: 0;
 }
 
-.sec-wht-list {
+.section-what__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  margin-bottom: 50px;
-
-  color: var(--main-headers-color);
-}
-
-.sec-wht-item {
+.section-what__item {
   position: relative;
   /* width: 370px; */
   flex-basis: calc((100% - 30px * var(--number-of-gaps-two)) / var(--number-of-items-three));
 }
 
-.sec-wht-overtext {
+.section-what__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-what__overtext {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -402,13 +409,13 @@ address {
   background-color: var(--background-elements);
 }
 
-.sec-team-list {
+.section-team__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.sec-team-item {
+.section-team__item {
   /* width: 270px; */
   flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -417,7 +424,13 @@ address {
   background-color: var(--background-light-cl);
 }
 
-.team-name {
+.section-team__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -427,22 +440,21 @@ address {
   margin-bottom: 10px;
 }
 
-.team-position {
+.section-team__position {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   margin-bottom: 16px;
 }
 
-.team-thumb {
+.section-team__thumb {
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
 }
 
-.team-socials-list,
-.footer-socials-list {
+.section-team__socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,7 +462,7 @@ address {
   gap: 10px;
 }
 
-.team-socials-link {
+.section-team__socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,19 +475,13 @@ address {
   transition: background-color var(--anim-main), color var(--anim-main);
 }
 
-.team-socials-link:hover,
-.team-socials-link:focus {
+.section-team__socials-link:hover,
+.section-team__socials-link:focus {
   color: var(--light-txt-color);
   background-color: var(--main-accent-color);
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
-  color: var(--light-txt-color);
-  background-color: var(--main-accent-color);
-}
-
-.team-socials-icon {
+.section-team__socials-icon {
   fill: currentColor;
 }
 
@@ -521,6 +527,14 @@ address {
   padding-bottom: 60px;
 }
 
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -543,6 +557,12 @@ address {
 .footer .link {
   color: var(--light-footer-links-cl);
   transition: color var(--anim-main);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  color: var(--light-txt-color);
+  background-color: var(--main-accent-color);
 }
 
 .footer-logo:hover,
