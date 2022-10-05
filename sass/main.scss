@@ -1,3 +1,25 @@
-body {
-  background-color: tomato;
-}
+// utility styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base styles
+@import './components/base';
+@import './components/container';
+@import './components/reset';
+
+// layout styles
+@import './components/header';
+@import './components/navigation';
+@import './components/hero';
+@import './components/speciality';
+@import './components/what';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/rbtn';
+@import './components/portfolio';
+@import './components/modal';
+
+// components styles
+@import './components/logo';
+@import './components/btn';
