@@ -128,8 +128,6 @@ address {
   line-height: 1.1923076923;
   color: var(--main-headers-color);
   text-decoration: none;
-  -webkit-transition: color var(--anim-main);
-  transition: color var(--anim-main);
 }
 .logo-first-word {
   color: var(--main-accent-color);
