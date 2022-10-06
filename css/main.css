@@ -120,6 +120,91 @@ address {
   padding: 0;
 }
 
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  color: var(--main-headers-color);
+  text-decoration: none;
+  -webkit-transition: color var(--anim-main);
+  transition: color var(--anim-main);
+}
+.logo-first-word {
+  color: var(--main-accent-color);
+  -webkit-transition: color var(--anim-main);
+  transition: color var(--anim-main);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  width: 216px;
+  height: 50px;
+  color: var(--light-txt-color);
+  background-color: var(--main-accent-color);
+  border-radius: 4px;
+  border: 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
+  transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
+  transition: box-shadow var(--anim-main), background-color var(--anim-main), color var(--anim-main);
+  transition: box-shadow var(--anim-main), background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
+}
+.btn:hover, .btn:focus {
+  background-color: var(--background-elements);
+  color: var(--main-headers-color);
+}
+
+.sec-prj-list-rbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.rbtn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  background-color: var(--background-elements);
+  color: var(--main-headers-color);
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  cursor: pointer;
+  -webkit-transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
+  transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
+  transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main);
+  transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main), -webkit-box-shadow var(--anim-main);
+}
+.rbtn:hover, .rbtn:focus {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* поточна кнопка */
+.current-rbtn {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
+}
+
 /* шапка */
 .header {
   border-bottom: 1px solid #ececec;
@@ -539,12 +624,9 @@ address {
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-}
-.footer-logo:hover, .footer-logo:focus {
-  color: var(--main-accent-color);
+  color: var(--light-txt-color);
 }
 
-.footer-logo,
 .link-map {
   color: var(--light-txt-color);
   text-decoration: none;
@@ -698,49 +780,6 @@ address {
 }
 .subscribe-form-input:focus {
   border-color: var(--main-accent-color);
-}
-
-.sec-prj-list-rbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-
-.rbtn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  background-color: var(--background-elements);
-  color: var(--main-headers-color);
-  border-radius: 4px;
-  border: 0;
-  padding: 6px 22px;
-  cursor: pointer;
-  -webkit-transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
-  transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
-  transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main);
-  transition: background-color var(--anim-main), color var(--anim-main), box-shadow var(--anim-main), -webkit-box-shadow var(--anim-main);
-}
-.rbtn:hover, .rbtn:focus {
-  background-color: var(--main-accent-color);
-  color: var(--light-txt-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-/* поточна кнопка */
-.current-rbtn {
-  background-color: var(--main-accent-color);
-  color: var(--light-txt-color);
 }
 
 /* Портфоліо */
@@ -1062,49 +1101,4 @@ address {
   width: 200px;
   height: 50px;
   margin: 0 auto;
-}
-
-.logo {
-  font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  color: var(--main-headers-color);
-  text-decoration: none;
-  -webkit-transition: color var(--anim-main);
-  transition: color var(--anim-main);
-}
-.logo-first-word {
-  color: var(--main-accent-color);
-  -webkit-transition: color var(--anim-main);
-  transition: color var(--anim-main);
-}
-.logo:hover, .logo:focus {
-  color: var(--main-accent-color);
-}
-
-.btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  width: 216px;
-  height: 50px;
-  color: var(--light-txt-color);
-  background-color: var(--main-accent-color);
-  border-radius: 4px;
-  border: 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  -webkit-transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
-  transition: background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
-  transition: box-shadow var(--anim-main), background-color var(--anim-main), color var(--anim-main);
-  transition: box-shadow var(--anim-main), background-color var(--anim-main), color var(--anim-main), -webkit-box-shadow var(--anim-main);
-}
-.btn:hover, .btn:focus {
-  background-color: var(--background-elements);
-  color: var(--main-headers-color);
 }/*# sourceMappingURL=main.css.map */

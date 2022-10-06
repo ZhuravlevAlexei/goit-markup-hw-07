@@ -16,14 +16,9 @@
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-
-  &:hover,
-  &:focus {
-    color: var(--main-accent-color);
-  }
+  color: var(--light-txt-color);
 }
 
-.footer-logo,
 .link-map {
   color: var(--light-txt-color);
   text-decoration: none;

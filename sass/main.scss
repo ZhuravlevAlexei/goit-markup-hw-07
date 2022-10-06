@@ -3,23 +3,23 @@
 @import './utils/visually-hidden';
 
 // base styles
-@import './components/base';
-@import './components/container';
-@import './components/reset';
-
-// layout styles
-@import './components/header';
-@import './components/navigation';
-@import './components/hero';
-@import './components/speciality';
-@import './components/what';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
-@import './components/rbtn';
-@import './components/portfolio';
-@import './components/modal';
+@import './base/base';
+@import './base/container';
+@import './base/reset';
 
 // components styles
 @import './components/logo';
 @import './components/btn';
+@import './components/rbtn';
+
+// layout styles
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/hero';
+@import './layout/speciality';
+@import './layout/what';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
+@import './layout/modal';
